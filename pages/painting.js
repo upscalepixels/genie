@@ -1,16 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import Navbar from '../components/navbar';
-
 const items = [
-  { label: 'Standard', value: 'graphic t-shirt illustration design of', params: 'in a clean vector style on a solid background --s 1000 --no mockup' },
-  { label: 'Colorful', value: 'rainbow color graphic t-shirt illustration design of', params: 'in a clean vector style on a solid background --s 1000 --no mockup' },
-  { label: 'Vintage', value: 'monochromatic vintage graphic t-shirt vector design of', params: 'in a simple single color style on a solid background --s 1000 --no mockup' },
-  { label: 'Cartoon', value: 'retro illustration of', params: 'in a cartoon style on a solid background --s 1000 --no mockup' },
-  { label: 'Kawaii', value: 'cute chibi kawaii style of', params: 'on a solid background --s 1000 --no mockup' },
-  { label: 'Anime', value: 'anime style illustration of', params: 'on a solid background --s 1000 --no mockup' },
-  { label: 'Manga', value: 'manga style japanese anime art for', params: 'enclosed in a comic book style panel --ar 3:2 --s 1000 --no mockup text words girls people' },
-  { label: 'Comic', value: 'graphic novel illustration for', params: 'enclosed in a comic book art style panel --ar 4:5 --s 1000 --no mockup text words' },
-  { label: 'Heart', value: 'graphic t-shirt vector in the shape of a heart made up of elements related to', params: 'on a solid background --s 1000 --no mockup' },
+  { label: 'Oil Painting', value: 'oil painting::1', params: '--ar 11:14 --s 1000 --no mockup frame' },
+  { label: 'Acrylic Painting', value: 'acrylic painting::1', params: '--ar 11:14 --s 1000 --no mockup frame' },
+  { label: 'Digial Painting', value: 'digital painting::1', params: '--ar 11:14 --s 1000 --no mockup frame' },
 ];
 
 export default function Home() {
@@ -25,7 +18,7 @@ export default function Home() {
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
-  };4
+  };
 
   const startMessage = '/imagine prompt:';
   const selectedItemString = selectedItem ? `${selectedItem} ${inputValue} ` : '';

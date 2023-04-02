@@ -1,16 +1,141 @@
 html,
 body {
   padding: 0;
+  width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  text-transform: uppercase;
+  background: rgb(28,28,28);
+  color: rgb(255,255,255,.9);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  color: rgb(255,255,255,.9);
 }
 
 * {
   box-sizing: border-box;
+}
+
+#__next {
+  width: 100%;
+}
+
+.type {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Three columns */
+  grid-gap: 10px; /* Add a gap between items */
+}
+
+
+.radio {
+  text-align: center;
+  border-radius: 5px;
+  user-select: none;
+  border: 2px solid transparent;
+  background: rgb(255,255,255,.1);
+}
+
+button {
+  outline: none;
+}
+
+.radio label {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 25px 15px;
+}
+
+.checked {
+  border: 2px solid #6200EE;
+}
+
+.prompt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px !important;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input input {
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 10px;
+  text-align: center;
+  background: #6200EE;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  font-size: .8rem;
+  height:
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.choice-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 300px !important;
+}
+
+.choice-container label input {
+  margin-right: 10px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.float-container {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 115px;
+  padding: 15px 0px;
+}
+
+.float-container .container {
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navbar a div {
+  border-bottom: 4px solid rgb(255,255,255,.1);
+  font-size: 1rem;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 4px solid #6200EE !important;
 }

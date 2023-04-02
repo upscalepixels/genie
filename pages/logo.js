@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import Navbar from '../components/navbar';
-
 const items = [
   { label: 'Standard', value: 'graphic t-shirt illustration design of', params: 'in a clean vector style on a solid background --s 1000 --no mockup' },
   { label: 'Colorful', value: 'rainbow color graphic t-shirt illustration design of', params: 'in a clean vector style on a solid background --s 1000 --no mockup' },
